@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#40594a" />
+    <meta name="description" content="Kafe dijital menüsü" />
+    <title>La'Meva | Menü</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/logo-light.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero" id="top">
+      <nav class="topbar container" aria-label="Ana menü">
+        <a class="brand" href="#top" aria-label="Ana sayfa">
+          <img src="assets/logo-light.png" alt="Kafe Logo" class="brand-logo" />
+          <span class="brand-copy">
+            <strong>La'Meva</strong>
+            <small>COFFEE • KITCHEN • DESSERT</small>
+          </span>
+        </a>
+        <a class="outline-button" href="#menu">Menüyü İncele</a>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-copy">
+          <span class="eyebrow">Günün en güzel molası</span>
+          <h1><em>İyi kahve.</em><br /><em>Güzel anlar.</em></h1>
+          <p>
+            Özenle hazırlanan kahveler, taze atıştırmalıklar ve gününü
+            güzelleştiren tatlılar. Favorini seç, anın tadını çıkar.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#menu">Menüyü Gör</a>
+            <a class="text-link" href="#contact">İletişim <span>↗</span></a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Kafe bilgileri">
+          <div class="hero-card-badge">Bugün Açık</div>
+          <div class="cup-art" aria-hidden="true">
+            <div class="steam steam-1"></div>
+            <div class="steam steam-2"></div>
+            <div class="steam steam-3"></div>
+            <div class="cup"><span></span></div>
+            <div class="saucer"></div>
+          </div>
+          <div class="quick-info">
+            <div>
+              <span>Çalışma Saatleri</span><strong>11:00 — 00:00</strong>
+            </div>
+            <div>
+              <span>Adres</span
+              ><strong
+                >Mahallesi, Osman Yılmaz, Yıldız Cd. No:36, 41400
+                Gebze/Kocaeli</strong
+              >
+            </div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro container">
+        <div>
+          <span class="eyebrow dark">Özenle seçildi</span>
+          <h2>Her damak tadına<br />uygun bir favori.</h2>
+        </div>
+      </section>
+
+      <section class="menu-shell" id="menu">
+        <div class="container">
+          <div class="menu-toolbar">
+            <div>
+              <span class="eyebrow">Menümüz</span>
+              <h2>Bugün ne istersin?</h2>
+            </div>
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="menuSearch"
+                type="search"
+                placeholder="Menüde ara..."
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <div
+            class="category-tabs"
+            role="tablist"
+            aria-label="Menü kategorileri"
+          >
+            <button class="tab active" data-target="all" type="button">
+              Tümü
+            </button>
+            <button class="tab" data-target="atistirmaliklar" type="button">
+              Atıştırmalıklar
+            </button>
+            <button class="tab" data-target="sicak-icecekler" type="button">
+              Sıcak İçecekler
+            </button>
+            <button class="tab" data-target="soguk-kahveler" type="button">
+              Soğuk Kahveler
+            </button>
+            <button class="tab" data-target="mesrubatlar" type="button">
+              Meşrubatlar
+            </button>
+            <button class="tab" data-target="tatlilar" type="button">
+              Tatlılar
+            </button>
+          </div>
+
+          <div class="menu-grid">
+            <section class="menu-category" data-category="atistirmaliklar">
+              <div class="category-heading">
+                <div class="category-icon">01</div>
+                <div>
+                  <span>Mutfaktan</span>
+                  <h3>Atıştırmalıklar</h3>
+                </div>
+              </div>
+              <div class="items">
+                <article class="menu-item">
+                  <div>
+                    <h4>Pestolu Tavuklu Sandviç</h4>
+                    <p>Pesto aroması ve tavuk lezzetiyle doyurucu sandviç.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Suda Mozzarella Sandviç</h4>
+                    <p>Yumuşak mozzarella ile hafif ve taze bir seçenek.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Dana Jambonlu Sandviç</h4>
+                    <p>Dana jambon ve özel eşlikçilerle hazırlanır.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Kaşarlı Tost Tabağı</h4>
+                    <p>Bol kaşarlı klasik tost ve tabak eşlikçileri.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Karışık Tost Tabağı</h4>
+                    <p>Klasik karışık tost lezzeti, sıcak servis.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Kavurma Kaşarlı Tost Tabağı</h4>
+                    <p>Kavurma ve eriyen kaşarın güçlü uyumu.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Beyaz Peynirli Domatesli Tost Tabağı</h4>
+                    <p>Beyaz peynir ve domatesle dengeli, hafif tost.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+              </div>
+            </section>
+
+            <section class="menu-category" data-category="sicak-icecekler">
+              <div class="category-heading">
+                <div class="category-icon">02</div>
+                <div>
+                  <span>Sıcacık</span>
+                  <h3>Sıcak İçecekler</h3>
+                </div>
+              </div>
+              <div class="items compact-items">
+                <article class="menu-item">
+                  <div><h4>Fincan Çay</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Çay</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Türk Kahvesi</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Double Türk Kahvesi</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Filtre Kahve</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Americano</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Karamel Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Vanilla Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Toffee Nut Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Cortado</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Espresso</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Mocha</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>White Chocolate Mocha</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Salep</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Sıcak Çikolata</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Cappuccino</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+              </div>
+            </section>
+
+            <section class="menu-category" data-category="soguk-kahveler">
+              <div class="category-heading">
+                <div class="category-icon">03</div>
+                <div>
+                  <span>Serinleten</span>
+                  <h3>Soğuk Kahveler</h3>
+                </div>
+              </div>
+              <div class="items compact-items">
+                <article class="menu-item">
+                  <div><h4>Ice Filtre</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice Americano</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice Karamel Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice Mocha</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice Vanilla Latte</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Ice White Mocha</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+              </div>
+            </section>
+
+            <section class="menu-category" data-category="mesrubatlar">
+              <div class="category-heading">
+                <div class="category-icon">04</div>
+                <div>
+                  <span>Ferahlatan</span>
+                  <h3>Meşrubatlar</h3>
+                </div>
+              </div>
+              <div class="items">
+                <article class="menu-item">
+                  <div><h4>Su</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Limonata</h4>
+                    <p>Ferahlatıcı klasik limonata.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Churchill</h4>
+                    <p>Limon ve tuz dokunuşuyla ferah içim.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Beypazarı Soda</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Uludağ Soda</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div><h4>Pepsi</h4></div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Lipton Ice Tea</h4>
+                    <p>Şeftali, limon veya mango.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Meyveli Soda Çeşitleri</h4>
+                    <p>Elma, limon veya çilek.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Meyve Suyu Çeşitleri</h4>
+                    <p>Karışık, şeftali veya vişne.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+              </div>
+            </section>
+
+            <section
+              class="menu-category featured-category"
+              data-category="tatlilar"
+            >
+              <div class="category-heading">
+                <div class="category-icon">05</div>
+                <div>
+                  <span>Tatlı bir mola</span>
+                  <h3>Tatlılar</h3>
+                </div>
+              </div>
+              <div class="items">
+                <article class="menu-item">
+                  <div>
+                    <h4>Brownie</h4>
+                    <p>Yoğun çikolata lezzeti.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Spoonful</h4>
+                    <p>Kaşık kaşık mutluluk.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Magnolia</h4>
+                    <p>Kremamsı ve hafif tatlı.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>San Sebastian</h4>
+                    <p>Yanık yüzeyli, yoğun kıvamlı cheesecake.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Tiramisu</h4>
+                    <p>Kahve aromalı İtalyan klasiği.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Orman Meyveli Cheesecake</h4>
+                    <p>Meyvemsi ve ferah dokunuş.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Lotus Cup</h4>
+                    <p>Lotus bisküvi aromalı özel kup.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Cookie Pie</h4>
+                    <p>Yumuşak dokulu, bol lezzetli.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Antep Fıstıklı Cookie</h4>
+                    <p>Antep fıstığı dokunuşlu cookie.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+                <article class="menu-item">
+                  <div>
+                    <h4>Waffle</h4>
+                    <p>Günün en tatlı finali.</p>
+                  </div>
+                  <strong>000 ₺</strong>
+                </article>
+              </div>
+            </section>
+          </div>
+
+          <p class="empty-state" id="emptyState" hidden>
+            Aradığınız ürün menüde bulunamadı.
+          </p>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="container quote-inner">
+          <span>“</span>
+          <p>
+            Kahve yalnızca bir içecek değil;<br />güzel bir sohbetin
+            başlangıcıdır.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <img
+              src="assets/logo-light.png"
+              alt="Kafe Logo"
+              class="brand-logo"
+            />
+            <span class="brand-copy"
+              ><strong>La'Meva</strong
+              ><small>COFFEE • KITCHEN • DESSERT</small></span
+            >
+          </a>
+          <p>Lezzetli molaların buluşma noktası.</p>
+        </div>
+        <div>
+          <span>Adres</span
+          ><strong
+            >Mahallesi, Osman Yılmaz, Yıldız Cd. No:36, 41400<br />Gebze/Kocaeli</strong
+          >
+        </div>
+        <div><span>Telefon</span><strong>0 (543) 407 21 10</strong></div>
+        <div class="social-item">
+          <span>Instagram</span>
+
+          <a href="https://www.instagram.com/lamevacafe/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <strong>@lamevacafe</strong>
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> La'Meva. Tüm hakları saklıdır.</small>
+        <a href="#top">Yukarı dön ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
